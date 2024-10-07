@@ -1,6 +1,6 @@
-# Task 2
 
-JavaScript:
+
+# JavaScript:
 
 Develop a basic button that changes
 its color when clicked using
