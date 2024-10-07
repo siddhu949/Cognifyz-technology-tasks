@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        input[type="number"] {
+            padding: 10px;
+            margin: 5px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JavaScript Task Examples</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Change Button Color</h2>
+            <button id="colorButton" onclick="changeColor()">Click Me!</button>
+        </section>
+
+        <section>
+            <h2>Greeting Message</h2>
+            <button onclick="showGreeting()">Show Greeting</button>
+        </section>
+
+        <section>
+            <h2>Basic Calculator</h2>
+            <input type="number" id="num1" placeholder="Enter first number">
+            <input type="number" id="num2" placeholder="Enter second number">
+            <button onclick="addNumbers()">Add</button>
+            <p id="result"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 JavaScript Examples</p>
+    </footer>
+
+    <script>
+        function changeColor() {
+            const button = document.getElementById('colorButton');
+            const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            button.style.backgroundColor = randomColor;
+        }
+
+        function showGreeting() {
+            const currentHour = new Date().getHours();
+            let greeting;
+
+            if (currentHour < 12) {
+                greeting = "Good Morning!";
+            } else if (currentHour < 18) {
+                greeting = "Good Afternoon!";
+            } else {
+                greeting = "Good Evening!";
+            }
+
+            alert(greeting);
+        }
+
+        function addNumbers() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const sum = num1 + num2;
+            document.getElementById('result').innerText = "Result: " + sum;
+        }
+    </script>
+</body>
+</html>
