@@ -1,13 +1,9 @@
-# JavaScript:
+# Front-end Frameworks:
 
-Develop a basic button that changes
-its color when clicked using
-JavaScript.
+Use a front-end framework like Bulma
+or UIKit to create a responsive card
+component with an image and text.
 
-Create an alert box that displays a
-greeting message based on the current
-time using JavaScript.
-
-Build a basic calculator that adds two
-numbers together and displays the
-result using JavaScript.
+Implement a basic responsive grid
+layout using a front-end framework
+like Bootstrap or Foundation.
